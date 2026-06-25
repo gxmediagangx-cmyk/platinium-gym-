@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #00d2ff;
+  --color-brand-blue-glow: rgba(0, 210, 255, 0.4);
+  --color-brand-black: #080808;
+  --color-brand-dark: #121212;
+  --color-brand-gray: #1a1a1a;
+  --color-brand-gray-light: #242424;
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-script: var(--font-script);
+
+  /* Custom shadows for glow effects */
+  --shadow-glow: 0 0 15px var(--color-brand-blue-glow);
+  --shadow-glow-hover: 0 0 25px rgba(0, 210, 255, 0.6);
+  --shadow-glow-sm: 0 0 8px var(--color-brand-blue-glow);
+}
+
+body {
+  background-color: var(--color-brand-black);
+  color: white;
+}
+
+/* Base scrollbar styling for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gray-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue);
+}
